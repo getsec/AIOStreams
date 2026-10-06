@@ -1,5 +1,83 @@
 # Changelog
 
+## [2.36.0](https://github.com/Viren070/AIOStreams/compare/v2.35.9...v2.36.0) (2026-10-06)
+
+
+### Features
+
+* **dashboard:** add a media info page ([b94647c](https://github.com/Viren070/AIOStreams/commit/b94647c26d9207823ff11b03de2832ad812608f6))
+* **db:** add the media info tables ([ac93a93](https://github.com/Viren070/AIOStreams/commit/ac93a93822ad0523de32b4883d43ebe7a804806a))
+* **docker:** ship a minimal ffprobe ([472def3](https://github.com/Viren070/AIOStreams/commit/472def37da5a9ee55f66f27b2cabe9badf0d9cad))
+* **jellyfin-web:** add {scheme} to the player link ([9db03c5](https://github.com/Viren070/AIOStreams/commit/9db03c542df26f7d04fde93965a04c2ace468835))
+* **jellyfin-web:** add Android players to the player choice ([26a3050](https://github.com/Viren070/AIOStreams/commit/26a30502ffd6287383286725882a5b998ee5af0e))
+* **jellyfin-web:** add Original language and a default-track switch to the audio settings ([4687ea2](https://github.com/Viren070/AIOStreams/commit/4687ea27ef14289103d6c68c8df82458b18f608f))
+* **jellyfin-web:** add subtitle files by dropping or picking them ([76d7116](https://github.com/Viren070/AIOStreams/commit/76d711697a9687dab0fbf0be1daa575bd4063664))
+* **jellyfin-web:** add webOS and Tizen hosts ([68241bf](https://github.com/Viren070/AIOStreams/commit/68241bf687e009a4df1dffb27a24b36f2d162d32))
+* **jellyfin-web:** ask whether anyone is still watching before playing on ([2d52201](https://github.com/Viren070/AIOStreams/commit/2d52201b9b3f95e10a63692f2c4c5b4e8419d4c3))
+* **jellyfin-web:** block the webOS screensaver while the video plays ([340818f](https://github.com/Viren070/AIOStreams/commit/340818fbf595a4888467df65d08838f6bbac4375))
+* **jellyfin-web:** describe desktop playback failures from mpv's http error ([21f24bf](https://github.com/Viren070/AIOStreams/commit/21f24bfd4fb0b2a0edfc79474c9219afc02b3cf6))
+* **jellyfin-web:** hand the Android app's player the episodes that follow ([25e6f6f](https://github.com/Viren070/AIOStreams/commit/25e6f6f0b7719a0500ff569de4a19da2f4d57de6))
+* **jellyfin-web:** list films on the calendar ([05863cb](https://github.com/Viren070/AIOStreams/commit/05863cbb4a5889a8054ef8e8b0a8f46c3524a807))
+* **jellyfin-web:** look up the next episode's versions before its prompt ([fe2a9dd](https://github.com/Viren070/AIOStreams/commit/fe2a9dd00579cdc5a841df4c18fd24df6cb9250c))
+* **jellyfin-web:** play through AVPlay on Samsung TVs ([71c8c85](https://github.com/Viren070/AIOStreams/commit/71c8c85fc6e0aee3b1cf251c6b436797bb1a51df))
+* **jellyfin-web:** redesign server picker ([8c24862](https://github.com/Viren070/AIOStreams/commit/8c248623c0bd99e754865f97c2926167d4f998b1))
+* **jellyfin-web:** refresh watch state on the server socket's pushes ([db18973](https://github.com/Viren070/AIOStreams/commit/db189732477b3435cea49554ebc5ad91fc1565e4))
+* **jellyfin-web:** remember audio and subtitle picks per show ([3926dda](https://github.com/Viren070/AIOStreams/commit/3926ddad5b10e1e2ef1703da3b4cd49975b56898))
+* **jellyfin-web:** replace the external player link with a player choice ([3578bd3](https://github.com/Viren070/AIOStreams/commit/3578bd32e8c14cbc4b908e28b2a51ced4e2e05a6))
+* **jellyfin-web:** show filler and recap marks and skip them when playing on ([451321c](https://github.com/Viren070/AIOStreams/commit/451321c422a69b646817046de091db241528ac84))
+* **jellyfin-web:** start the desktop players on the server's default tracks ([fb4ded4](https://github.com/Viren070/AIOStreams/commit/fb4ded4ac2f8b78b7efa3a3bf90cb5ab22f2ff39))
+* **jellyfin-web:** switch audio tracks the video element lists ([f5a76a9](https://github.com/Viren070/AIOStreams/commit/f5a76a949a76ba38076906a76a15e7e0a42d0b0b))
+* **jellyfin-web:** use relative asset paths in the standalone build ([ca58c71](https://github.com/Viren070/AIOStreams/commit/ca58c71251ffd3aba1ef12bbcfcaa5813822e217))
+* **jellyfin:** add watchlisted shows and films to the calendar ([f5abba0](https://github.com/Viren070/AIOStreams/commit/f5abba05d5b503250989b321d4f12f0b5f933e3e))
+* **jellyfin:** fill a version's tracks from stored probes on play ([ba78352](https://github.com/Viren070/AIOStreams/commit/ba7835290f747bb9f3a39a2d395af0b3b2fb8720))
+* **jellyfin:** mark filler and recap episodes ([e17da78](https://github.com/Viren070/AIOStreams/commit/e17da78d347e645f070d615f5c28106faac7839c))
+* **media-info:** add a tags list to audio tracks ([6ff91b8](https://github.com/Viren070/AIOStreams/commit/6ff91b8737c26da71ccbfbedaf615e223323e0aa)), closes [#1443](https://github.com/Viren070/AIOStreams/issues/1443)
+* **media-info:** fill stream details from stored probes ([5c8b38d](https://github.com/Viren070/AIOStreams/commit/5c8b38dbc11fa7cbf349932d254bdda75dc022a2))
+* **media-info:** probe played files with ffprobe ([d0f43a3](https://github.com/Viren070/AIOStreams/commit/d0f43a3a1b3b7bf1e7bf011f57798b4ef7640ed9))
+* **media-info:** serve stored media info to other instances ([57d0156](https://github.com/Viren070/AIOStreams/commit/57d0156030ed25642b4233ab513ed5899fabbefa))
+* **media-info:** store what StremThru and RemuxDB report ([64aaffd](https://github.com/Viren070/AIOStreams/commit/64aaffd98efe3aaa1c2ae5e229a99404d29ed28b))
+* **parser:** read more stream details from behaviorHints ([d56784e](https://github.com/Viren070/AIOStreams/commit/d56784ed024a8bb618a2c94f280f25a5616fc0b8))
+* **parser:** read stream duration from behaviorHints.duration ([0b9b655](https://github.com/Viren070/AIOStreams/commit/0b9b655353fce57333f81bfbcf239b1e05dcfe00)), closes [#1340](https://github.com/Viren070/AIOStreams/issues/1340)
+* **presets:** parse the torrent file and title where addons name them ([4a27d2b](https://github.com/Viren070/AIOStreams/commit/4a27d2b5bdaaaafc90ffc4f5c09c9236d27e78dd))
+* **proxy:** name a trusted stream's release in its proxy token ([c3cedcf](https://github.com/Viren070/AIOStreams/commit/c3cedcfe5b0f6b6227a15e92808b32f39952c586))
+* **remuxdb:** contribute stored probes ([253cea2](https://github.com/Viren070/AIOStreams/commit/253cea295619f1460adb5c29407ae64da0e9c856))
+* **remuxdb:** enable contributing by default ([99b6dc3](https://github.com/Viren070/AIOStreams/commit/99b6dc3f907490ffa9e24eeb6c1f008609f1867c))
+* **remuxdb:** look streams up by default ([99b6dc3](https://github.com/Viren070/AIOStreams/commit/99b6dc3f907490ffa9e24eeb6c1f008609f1867c))
+* **tv:** build the Tizen package unsigned ([82e7ac3](https://github.com/Viren070/AIOStreams/commit/82e7ac33523b8333b33484d3bd40ffdcf7ed782e))
+* **tv:** package the standalone web app for webOS and Tizen ([915b925](https://github.com/Viren070/AIOStreams/commit/915b9251bd0b86b9fdc7bdf09f56db657fae0d1b))
+
+
+### Bug Fixes
+
+* **cache:** drop a buffered sql write on delete ([c2e6bdd](https://github.com/Viren070/AIOStreams/commit/c2e6bdd3e0803979f5daf30ca6e9efc12b2aad51))
+* **core:** drop "Usenet" from the built-in usenet service's known names ([28fa990](https://github.com/Viren070/AIOStreams/commit/28fa990d0f33eaa5c18ebb1e648d6fb2ca121812))
+* **core:** only type a stream as external when it has no url ([0f8a13d](https://github.com/Viren070/AIOStreams/commit/0f8a13de0c2cefff5954b81cd42c3aa84b520a16)), closes [#1375](https://github.com/Viren070/AIOStreams/issues/1375)
+* **dedupe:** copy probed tracks from a duplicate that lists them ([aeb4f2f](https://github.com/Viren070/AIOStreams/commit/aeb4f2fb91f72ff1620a34118552ac58edb1dc43))
+* **frontend:** add no-referrer to the marketplace and reorder modal logos ([37ff00f](https://github.com/Viren070/AIOStreams/commit/37ff00fe251fc50b87a36dfad7912caf229fbf6b))
+* **jellyfin-web:** clear only the position on remove from continue watching ([c66e99f](https://github.com/Viren070/AIOStreams/commit/c66e99fef2d4c3d94907120a6d49355d2c6d5a54))
+* **jellyfin-web:** hold Play to list the versions of a resume ([0c26e7b](https://github.com/Viren070/AIOStreams/commit/0c26e7b61b1e4d62ab2dfb0e5dbae8ad20b1d1a0))
+* **jellyfin-web:** replace the player controls with the error screen ([c34b7b1](https://github.com/Viren070/AIOStreams/commit/c34b7b1fe27f31300c12539faac5731720214eea))
+* **jellyfin:** list a probed file's streams in the file's order ([873d42f](https://github.com/Viren070/AIOStreams/commit/873d42f522b31a90fe87b96bc3541cf74802f239))
+* **jellyfin:** pick each version's default tracks from the user's settings ([0b98582](https://github.com/Viren070/AIOStreams/commit/0b985824b07a74cc101697e190d7b7597c1748b2))
+* **jellyfin:** return a user's saved settings from /Users/{id} ([fda114a](https://github.com/Viren070/AIOStreams/commit/fda114aa3431bc3577b4477387866cfd40369c27))
+* **media-info:** merge rows for one file before storing a batch ([533a3bc](https://github.com/Viren070/AIOStreams/commit/533a3bc448e84e902b17ead9819041d9d0115aa5))
+* **media-info:** read UTF-8 file names from Content-Disposition ([7673006](https://github.com/Viren070/AIOStreams/commit/7673006c06482b19ea2ea13550006a37811fb46c))
+* **presets:** mark old AnimeTosho archived, drop unneeded API key on new ([#1435](https://github.com/Viren070/AIOStreams/issues/1435)) ([fdde68c](https://github.com/Viren070/AIOStreams/commit/fdde68c4264035e49fb86ee49cd9c48183e17cd0))
+* **presets:** note TsukiHime's per-file audio/subtitle extraction ([#1436](https://github.com/Viren070/AIOStreams/issues/1436)) ([b17de1e](https://github.com/Viren070/AIOStreams/commit/b17de1eabd7d98e6f4a65aa01229d215081ff38f))
+* **presets:** replace the fkstream and nzbhydra logos ([063a46f](https://github.com/Viren070/AIOStreams/commit/063a46f760e029f998e3793c306a9b7316b07db4)), closes [#1361](https://github.com/Viren070/AIOStreams/issues/1361)
+* **remuxdb:** put the season and episode in the versions id ([bc78e36](https://github.com/Viren070/AIOStreams/commit/bc78e3657ce06684adacd71a1db34559eebba5da))
+* **usenet:** check services by the hash of the NZB URL they are sent ([546b706](https://github.com/Viren070/AIOStreams/commit/546b706683d1b53afe1ba7213df798734d7a0837))
+* **usenet:** hash proxied NZB URLs by the URL behind our proxy ([9ac363f](https://github.com/Viren070/AIOStreams/commit/9ac363f4ac9d7d56f3ee4017a084bff3f71c5fcc))
+* **watch-state:** add the session start time to playback event ids ([ea9ddbd](https://github.com/Viren070/AIOStreams/commit/ea9ddbd2e11adaab4d0400988a6df8452a912a87))
+* **watch-state:** keep the played mark under a resume point ([a4cdbc0](https://github.com/Viren070/AIOStreams/commit/a4cdbc078e38c4c200aad3f8ff8d52546e7d7b96))
+* **watch-state:** treat a favourite under any spelling as the title's ([14336d0](https://github.com/Viren070/AIOStreams/commit/14336d0488c52b1a9c564e96df9b09c17cca111f)), closes [#1429](https://github.com/Viren070/AIOStreams/issues/1429)
+
+
+### Performance Improvements
+
+* **media-info:** send stored records packed from the lookup API ([d9b6399](https://github.com/Viren070/AIOStreams/commit/d9b639908c6934eec105884fd7873c619f4800a8))
+* **remuxdb:** start the lookup alongside the addon fetch and time out after 2 s ([99b6dc3](https://github.com/Viren070/AIOStreams/commit/99b6dc3f907490ffa9e24eeb6c1f008609f1867c))
+
 ## [2.35.9](https://github.com/Viren070/AIOStreams/compare/v2.35.8...v2.35.9) (2026-10-03)
 
 
